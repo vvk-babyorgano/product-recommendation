@@ -3,7 +3,7 @@
 client_id = "d2d14b72c4a7202553688dc741754af4"
 name = "product-recommendation"
 handle = "product-recommendation-48"
-application_url = "https://cycles-female-violence-rope.trycloudflare.com"
+application_url = "https://worst-fields-viewed-tokyo.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -12,9 +12,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://cycles-female-violence-rope.trycloudflare.com/auth/callback",
-  "https://cycles-female-violence-rope.trycloudflare.com/auth/shopify/callback",
-  "https://cycles-female-violence-rope.trycloudflare.com/api/auth/callback"
+  "https://worst-fields-viewed-tokyo.trycloudflare.com/auth/callback",
+  "https://worst-fields-viewed-tokyo.trycloudflare.com/auth/shopify/callback",
+  "https://worst-fields-viewed-tokyo.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

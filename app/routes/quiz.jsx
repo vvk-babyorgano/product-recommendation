@@ -1,4 +1,4 @@
-import ProductQuiz from "../components/ProductQuiz";
+import ProductQuiz from "../src/components/ProductQuiz";
 
 const QuizPage = () => {
   return (
