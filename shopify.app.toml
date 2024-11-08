@@ -3,7 +3,7 @@
 client_id = "d2d14b72c4a7202553688dc741754af4"
 name = "product-recommendation"
 handle = "product-recommendation-48"
-application_url = "https://immune-encourage-websites-anderson.trycloudflare.com"
+application_url = "https://looked-force-assets-lawyer.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -12,9 +12,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://immune-encourage-websites-anderson.trycloudflare.com/auth/callback",
-  "https://immune-encourage-websites-anderson.trycloudflare.com/auth/shopify/callback",
-  "https://immune-encourage-websites-anderson.trycloudflare.com/api/auth/callback"
+  "https://looked-force-assets-lawyer.trycloudflare.com/auth/callback",
+  "https://looked-force-assets-lawyer.trycloudflare.com/auth/shopify/callback",
+  "https://looked-force-assets-lawyer.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
