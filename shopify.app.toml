@@ -3,7 +3,7 @@
 client_id = "d2d14b72c4a7202553688dc741754af4"
 name = "product-recommendation"
 handle = "product-recommendation-48"
-application_url = "https://anything-priced-cartoons-ac.trycloudflare.com"
+application_url = "https://alive-christmas-sql-justify.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -12,9 +12,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://anything-priced-cartoons-ac.trycloudflare.com/auth/callback",
-  "https://anything-priced-cartoons-ac.trycloudflare.com/auth/shopify/callback",
-  "https://anything-priced-cartoons-ac.trycloudflare.com/api/auth/callback"
+  "https://alive-christmas-sql-justify.trycloudflare.com/auth/callback",
+  "https://alive-christmas-sql-justify.trycloudflare.com/auth/shopify/callback",
+  "https://alive-christmas-sql-justify.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

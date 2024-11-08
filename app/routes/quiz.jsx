@@ -9,7 +9,11 @@ export default function QuizPage() {
     fetch('/api/quiz-data')
       .then((response) => response.json())
       .then((data) => {
-        setQuizData(data);
+        if (data && data.length > 0) {
+          setQuizData(data);
+        } else {
+          console.error("Quiz data is empty or not available.");
+        }
         setLoading(false);
       })
       .catch((error) => {
@@ -23,8 +27,10 @@ export default function QuizPage() {
       <h1>Product Recommendation Quiz</h1>
       {loading ? (
         <p>Loading quiz...</p>
-      ) : (
+      ) : quizData ? (
         <ProductQuiz data={quizData} />
+      ) : (
+        <p>No quiz data available.</p>
       )}
     </div>
   );
