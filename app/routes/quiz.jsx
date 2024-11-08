@@ -1,3 +1,5 @@
+import ProductQuiz from "../components/ProductQuiz";
+
 export default function QuizPage() {
     return (
       <div>
