@@ -3,7 +3,7 @@
 client_id = "d2d14b72c4a7202553688dc741754af4"
 name = "product-recommendation"
 handle = "product-recommendation-48"
-application_url = "https://june-tile-td-forward.trycloudflare.com"
+application_url = "https://cohen-reconstruction-suspended-remedy.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -12,9 +12,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://june-tile-td-forward.trycloudflare.com/auth/callback",
-  "https://june-tile-td-forward.trycloudflare.com/auth/shopify/callback",
-  "https://june-tile-td-forward.trycloudflare.com/api/auth/callback"
+  "https://cohen-reconstruction-suspended-remedy.trycloudflare.com/auth/callback",
+  "https://cohen-reconstruction-suspended-remedy.trycloudflare.com/auth/shopify/callback",
+  "https://cohen-reconstruction-suspended-remedy.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
