@@ -1,33 +1,27 @@
-import { useEffect, useState } from "react";
-import ProductQuiz from "../components/ProductQuiz";
+import React, { useState, useEffect } from 'react';
+import ProductQuiz from '../components/ProductQuiz';  
 
 export default function QuizPage() {
-  const [quizData, setQuizData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [quizData, setQuizData] = useState([]);
 
   useEffect(() => {
     fetch('/api/quiz-data')
-      .then((response) => response.json())
-      .then((data) => {
-        if (data && data.length > 0) {
-          setQuizData(data);
-        } else {
-          console.error("Quiz data is empty or not available.");
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
         }
-        setLoading(false);
+        return response.json();
       })
+      .then((data) => setQuizData(data))
       .catch((error) => {
         console.error('Error fetching quiz data:', error);
-        setLoading(false);
       });
   }, []);
 
   return (
     <div>
       <h1>Product Recommendation Quiz</h1>
-      {loading ? (
-        <p>Loading quiz...</p>
-      ) : quizData ? (
+      {quizData.length > 0 ? (
         <ProductQuiz data={quizData} />
       ) : (
         <p>No quiz data available.</p>
