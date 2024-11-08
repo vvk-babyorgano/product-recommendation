@@ -3,7 +3,7 @@
 client_id = "d2d14b72c4a7202553688dc741754af4"
 name = "product-recommendation"
 handle = "product-recommendation-48"
-application_url = "https://white-glossary-hewlett-features.trycloudflare.com"
+application_url = "https://tamil-tail-composition-engagement.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -12,9 +12,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://white-glossary-hewlett-features.trycloudflare.com/auth/callback",
-  "https://white-glossary-hewlett-features.trycloudflare.com/auth/shopify/callback",
-  "https://white-glossary-hewlett-features.trycloudflare.com/api/auth/callback"
+  "https://tamil-tail-composition-engagement.trycloudflare.com/auth/callback",
+  "https://tamil-tail-composition-engagement.trycloudflare.com/auth/shopify/callback",
+  "https://tamil-tail-composition-engagement.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
