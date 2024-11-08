@@ -1,29 +1,25 @@
+// ProductQuiz.jsx
 import { useState } from "react";
 
-const ProductQuiz = () => {
+const ProductQuiz = ({ data }) => {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState([]);
 
-  const questions = [
-    { question: "What type of product are you looking for?", options: ["Hand Wash", "Body Wash"] },
-    { question: "What is your skin type?", options: ["Dry", "Oily", "Combination"] },
-  ];
+  if (!data || data.length === 0) {
+    return <p>No quiz data available.</p>;
+  }
 
   const handleAnswer = (answer) => {
     setAnswers([...answers, answer]);
     setQuestionIndex(questionIndex + 1);
   };
 
-  const showRecommendations = () => {
-    console.log(answers);
-  };
-
   return (
     <div>
-      {questionIndex < questions.length ? (
+      {questionIndex < data.length ? (
         <div>
-          <h2>{questions[questionIndex].question}</h2>
-          {questions[questionIndex].options.map((option) => (
+          <h2>{data[questionIndex].question}</h2>
+          {data[questionIndex].options.map((option) => (
             <button key={option} onClick={() => handleAnswer(option)}>
               {option}
             </button>
@@ -32,7 +28,7 @@ const ProductQuiz = () => {
       ) : (
         <div>
           <h2>Thanks for completing the quiz!</h2>
-          <button onClick={showRecommendations}>See your recommendations</button>
+          {/* You can also add a "showRecommendations" function here */}
         </div>
       )}
     </div>
