@@ -1,7 +1,6 @@
 import { json } from "@remix-run/node";
 
 export const loader = async () => {
-
   const quizData = [
     { 
       question: "What type of product are you looking for?", 

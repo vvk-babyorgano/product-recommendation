@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import ProductQuiz from '../components/ProductQuiz';  
+import { useState, useEffect } from "react";
+import ProductQuiz from "../components/ProductQuiz";  
 
 export default function QuizPage() {
   const [quizData, setQuizData] = useState([]);
 
   useEffect(() => {
-    fetch('/api/quiz-data')
+    fetch('/api/quiz-data')  
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
