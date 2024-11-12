@@ -1,18 +1,26 @@
 import { useState, useEffect } from "react";
-import ProductQuiz from "../../src/components/ProductQuiz";
+import ProductQuiz from "../src/components/ProductQuiz";
 
 export default function QuizPage() {
   const [quizData, setQuizData] = useState([]);
 
   useEffect(() => {
+    console.log("Attempting to fetch quiz data");
     fetch('/api/quiz-data')
       .then((response) => {
-        if (!response.ok) throw new Error("Network response was not ok");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
         return response.json();
       })
-      .then((data) => setQuizData(data))
-      .catch((error) => console.error('Error fetching quiz data:', error));
-  }, []);
+      .then((data) => {
+        console.log("Quiz data fetched:", data);
+        setQuizData(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching quiz data:', error);
+      });
+  }, []); 
 
   return (
     <div>
